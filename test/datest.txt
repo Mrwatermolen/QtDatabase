@@ -1,0 +1,24 @@
+QSqlQuery q;
+  q.exec("alter database QtSqlTest character set utf8;");
+  qDebug() << q.lastError();
+
+  q.exec(
+      QString("create table RawImage (id int PRIMARY KEY AUTO_INCREMENT, name "
+              "varchar(8), createDate "
+              "timestamp, description TEXT)"));
+  qDebug() << q.lastError();
+
+  q.exec(QString(
+      "create table Experiment (id int PRIMARY KEY AUTO_INCREMENT, name "
+      "varchar(8), createDate "
+      "timestamp, paramA varchar(10), paramB varchar(10),"
+      "paramC int, paramD double, paramE varchar(10), paramF varchar(10), "
+      "paramG varchar(10), paramH varchar(10), paramI varchar(10), paramJ "
+      "int,description TEXT)"));
+  qDebug() << q.lastError();
+
+  q.exec(QString("create table TableConfig (id int PRIMARY KEY AUTO_INCREMENT,"
+                 "field varchar(20), name varchar(20), type varchar(10),"
+                 "status varchar(10),"
+                 "createDate timestamp NULL DEFAULT CURRENT_TIMESTAMP)"));
+  qDebug() << q.lastError();

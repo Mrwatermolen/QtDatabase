@@ -1,0 +1,26 @@
+CompileFlags: # Tweak the parse settings
+  Add: 
+  [
+    -std=c++17,
+    -Wno-documentation,
+    -Wno-missing-prototypes,
+  ]
+Diagnostics:
+  ClangTidy:
+    Add:
+    [
+        performance-*, # 开启性能优化检测
+        modernize-*, # 开启代码现代化检测
+        bugprone-*,
+        portability-*,
+    ]
+    Remove: 
+    [
+      modernize-use-override,
+      modernize-use-trailing-return-type,
+      modernize-use-nodiscard,
+      modernize-pass-by-value,
+    ]
+    CheckOptions:
+      readability-identifier-naming.VariableCase: camelBack # 检测变量命名是否符合驼峰命名规则
+  # UnusedIncludes: Strict # 清理未使用的头文件

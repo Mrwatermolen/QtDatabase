@@ -1,0 +1,142 @@
+{
+  "tableConfig": {
+    "RawImage": [
+      {
+        "id": {
+          "status": "disable",
+          "type": "Integer",
+          "name": "编号"
+        }
+      },
+      {
+        "name": {
+          "status": "inTableView",
+          "type": "String",
+          "name": "名称"
+        }
+      },
+      {
+        "createDate": {
+          "status": "inTableView",
+          "type": "DateTime",
+          "name": "创建日期"
+        }
+      },
+      {
+        "url": {
+          "status": "inMenu",
+          "type": "String",
+          "name": "Url"
+        }
+      },
+      {
+        "description": {
+          "status": "inMenu",
+          "type": "Text",
+          "name": "描述"
+        }
+      }
+    ],
+    "Experiment": [
+      {
+        "id": {
+          "status": "disable",
+          "type": "Integer",
+          "name": "编号"
+        }
+      },
+      {
+        "name": {
+          "status": "inTableView",
+          "type": "String",
+          "name": "名称"
+        }
+      },
+      {
+        "createDate": {
+          "status": "inTableView",
+          "type": "DateTime",
+          "name": "创建日期"
+        }
+      },
+      {
+        "paramA": {
+          "status": "inTableView",
+          "type": "String",
+          "name": "参数A"
+        }
+      },
+      {
+        "paramB": {
+          "status": "inTableView",
+          "type": "String",
+          "name": "参数B"
+        }
+      },
+      {
+        "paramC": {
+          "status": "inMenu",
+          "type": "Integer",
+          "name": "参数C"
+        }
+      },
+      {
+        "paramD": {
+          "status": "inTableView",
+          "type": "Double",
+          "name": "参数D"
+        }
+      },
+      {
+        "paramE": {
+          "status": "inMenu",
+          "type": "String",
+          "name": "参数E"
+        }
+      },
+      {
+        "paramF": {
+          "status": "inTableView",
+          "type": "String",
+          "name": "参数F"
+        }
+      },
+      {
+        "paramG": {
+          "status": "inTableView",
+          "type": "String",
+          "name": "参数G"
+        }
+      },
+      {
+        "paramH": {
+          "status": "inTableView",
+          "type": "String",
+          "name": "参数H"
+        }
+      },
+      {
+        "paramI": {
+          "status": "inTableView",
+          "type": "String",
+          "name": "参数I"
+        }
+      },
+      {
+        "paramJ": {
+          "status": "inTableView",
+          "type": "Integer",
+          "name": "参数J"
+        }
+      },
+      {
+        "description": {
+          "status": "inMenu",
+          "type": "Text",
+          "name": "描述"
+        }
+      }
+    ],
+    "Others": []
+  }
+}
